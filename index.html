@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="generator">
+      <label for="" class="generator__input-name"
+        >Wybierz płeć
+        <select name="gender" class="generator__select">
+          <option value="both" selected>Wszyscy</option>
+          <option value="female">Kobiety</option>
+          <option value="male">Mężczyźni</option>
+        </select>
+      </label>
+      <label for="" class="generator__input-name"
+        >Liczba osób
+        <input
+          type="number"
+          class="generator__input"
+          name="users-number"
+          value="10"
+        />
+      </label>
+      <input type="submit" class="button" value="Pobierz użytkowników" />
+    </form>
+    <div class="users-list"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
